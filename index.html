@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Your Bank</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Your Bank</h1>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Your name:</h2>
+        <form id="new-account-holder">
+          <div class="form-group">
+            <label for="new-first-name">First name</label>
+            <input type="text" class="form-control" id="new-first-name">
+          </div>
+          <div class="form-group">
+            <label for="new-last-name">Last name</label>
+            <input type="text" class="form-control" id="new-last-name">
+          </div>
+
+          <div id="new-accounts">
+            <div class="new-account" id="first">
+
+              <div class="form group">
+                <label for="new-account-type">Account Type</label>
+                <select class="new-account-type" name="new-account-type" type="text">
+                  <option value="checking">Checking</option>
+                  <option value="savings">Savings</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="new-balance">Deposit Amount</label>
+                <input type="text" class="form-control new-balance">
+              </div>
+
+            </div>
+          </div>
+
+          <span class="btn btn-primary" id="add-account">Another account</span>
+
+          <button type="submit" class="btn">Add</button>
+        </form>
+
+        <h2>Account-holders:</h2>
+        <ul id="account-holders">
+
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <div id="show-account-holder">
+          <h2></h2>
+
+          <p>First name: <span class="first-name"></span></p>
+          <p>Last name: <span class="last-name"></span></p>
+          <p>Accounts:</p>
+          <ul id="accounts">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

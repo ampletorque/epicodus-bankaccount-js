@@ -1,0 +1,12 @@
+#show-account-holder {
+  display: none;
+}
+
+.account-holders {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.account-holders:hover {
+  text-decoration: underline;
+}
